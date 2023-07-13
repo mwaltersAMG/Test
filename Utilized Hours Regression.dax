@@ -1,0 +1,16 @@
+﻿EVALUATE
+LINESTX(
+    SUMMARIZECOLUMNS(
+        DIM_Organization[DispatchZone],
+        'Date'[Month Start],
+        DIM_ProductMapping[Product Heirarchy 2],
+        "Utilized Hrs", [Utilized Hrs],
+        "Deliveries", [Deliveries],
+        "Miles", [Miles],
+        "Loads", [Loads]
+    ),
+    [Utilized Hrs],
+    [Deliveries],
+    [Miles],
+    [Loads]
+)
